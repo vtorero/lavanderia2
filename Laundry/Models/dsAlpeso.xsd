@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsAlpeso" targetNamespace="http://tempuri.org/dsAlpeso.xsd" xmlns:mstns="http://tempuri.org/dsAlpeso.xsd" xmlns="http://tempuri.org/dsAlpeso.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsAlpeso" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsAlpeso" msprop:Generator_UserDSName="dsAlpeso">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="alPeso" msprop:Generator_TableClassName="alPesoDataTable" msprop:Generator_TableVarName="tablealPeso" msprop:Generator_RowChangedName="alPesoRowChanged" msprop:Generator_TablePropName="alPeso" msprop:Generator_RowDeletingName="alPesoRowDeleting" msprop:Generator_RowChangingName="alPesoRowChanging" msprop:Generator_RowEvHandlerName="alPesoRowChangeEventHandler" msprop:Generator_RowDeletedName="alPesoRowDeleted" msprop:Generator_RowClassName="alPesoRow" msprop:Generator_UserTableName="alPeso" msprop:Generator_RowEvArgName="alPesoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tipoServicio" msprop:Generator_ColumnVarNameInTable="columntipoServicio" msprop:Generator_ColumnPropNameInRow="tipoServicio" msprop:Generator_ColumnPropNameInTable="tipoServicioColumn" msprop:Generator_UserColumnName="tipoServicio" type="xs:string" minOccurs="0" />
+              <xs:element name="idOrden" msprop:Generator_ColumnVarNameInTable="columnidOrden" msprop:Generator_ColumnPropNameInRow="idOrden" msprop:Generator_ColumnPropNameInTable="idOrdenColumn" msprop:Generator_UserColumnName="idOrden" type="xs:string" minOccurs="0" />
+              <xs:element name="total" msprop:Generator_ColumnVarNameInTable="columntotal" msprop:Generator_ColumnPropNameInRow="total" msprop:Generator_ColumnPropNameInTable="totalColumn" msprop:Generator_UserColumnName="total" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

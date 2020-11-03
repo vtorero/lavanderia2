@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPendiente" targetNamespace="http://tempuri.org/dsPendiente.xsd" xmlns:mstns="http://tempuri.org/dsPendiente.xsd" xmlns="http://tempuri.org/dsPendiente.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPendiente" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsPendiente" msprop:Generator_UserDSName="dsPendiente">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="pendientes" msprop:Generator_TableClassName="pendientesDataTable" msprop:Generator_TableVarName="tablependientes" msprop:Generator_RowChangedName="pendientesRowChanged" msprop:Generator_TablePropName="pendientes" msprop:Generator_RowDeletingName="pendientesRowDeleting" msprop:Generator_RowChangingName="pendientesRowChanging" msprop:Generator_RowEvHandlerName="pendientesRowChangeEventHandler" msprop:Generator_RowDeletedName="pendientesRowDeleted" msprop:Generator_RowClassName="pendientesRow" msprop:Generator_UserTableName="pendientes" msprop:Generator_RowEvArgName="pendientesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idOrden" msprop:Generator_ColumnVarNameInTable="columnidOrden" msprop:Generator_ColumnPropNameInRow="idOrden" msprop:Generator_ColumnPropNameInTable="idOrdenColumn" msprop:Generator_UserColumnName="idOrden" type="xs:int" />
+              <xs:element name="fechaEntrega" msprop:Generator_ColumnVarNameInTable="columnfechaEntrega" msprop:Generator_ColumnPropNameInRow="fechaEntrega" msprop:Generator_ColumnPropNameInTable="fechaEntregaColumn" msprop:Generator_UserColumnName="fechaEntrega" type="xs:string" minOccurs="0" />
+              <xs:element name="nombreCliente" msprop:Generator_ColumnVarNameInTable="columnnombreCliente" msprop:Generator_ColumnPropNameInRow="nombreCliente" msprop:Generator_ColumnPropNameInTable="nombreClienteColumn" msprop:Generator_UserColumnName="nombreCliente" type="xs:string" minOccurs="0" />
+              <xs:element name="totalOrden" msprop:Generator_ColumnVarNameInTable="columntotalOrden" msprop:Generator_ColumnPropNameInRow="totalOrden" msprop:Generator_ColumnPropNameInTable="totalOrdenColumn" msprop:Generator_UserColumnName="totalOrden" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
