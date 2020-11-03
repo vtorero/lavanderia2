@@ -127,3 +127,4 @@ D:\lavanderia2\Laundry\obj\Debug\Lavanderia.forms.frmServicio.resources
 D:\lavanderia2\Laundry\obj\Debug\Lavanderia.forms.OrdenesV2.resources
 D:\lavanderia2\Laundry\obj\Debug\Lavanderia.Properties.Resources.resources
 D:\lavanderia2\Laundry\obj\Debug\Laundry.csproj.GenerateResource.Cache
+D:\lavanderia2\Laundry\obj\Debug\Laundry.csprojResolveAssemblyReference.cache

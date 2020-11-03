@@ -760,6 +760,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.ico" />
+    <None Include="Resources\logo %281%29.ico" />
     <None Include="Resources\Print_11009.ico" />
     <None Include="Resources\112_Tick_Green.ico" />
     <None Include="Resources\calculator1.ico" />
