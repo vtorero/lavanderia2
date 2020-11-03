@@ -35,11 +35,9 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cmbBase = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnIngresar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -85,7 +83,6 @@
             // 
             this.groupBox1.Controls.Add(this.cmbBase);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.btnCancelar);
             this.groupBox1.Controls.Add(this.btnIngresar);
             this.groupBox1.Controls.Add(this.txtPassword);
@@ -122,15 +119,6 @@
             this.label3.Text = "Base de Datos:";
             this.label3.Visible = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Lavanderia.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 28);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(124, 161);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
             // btnCancelar
             // 
             this.btnCancelar.Location = new System.Drawing.Point(336, 137);
@@ -160,10 +148,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Lavandería San Isidro S.A (V.15.10.20)";
+            this.Text = "Lavandería San Isidro S.A (V.03.11.20)";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -177,7 +164,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnIngresar;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox cmbBase;
         private System.Windows.Forms.Label label3;
     }
