@@ -51,7 +51,7 @@ namespace Lavanderia.forms
                 ConexBD cn1 = new ConexBD();
                 cn1.Conectar();
 
-                ticket.TextoCentro("LAVANDERIA SAN ISIDRO S.A");
+                ticket.TextoCentro("LAVANDERIA LAVA PREMIUM");
                 ticket.TextoIzquierda("");
                 MySqlCommand _comando1 = new MySqlCommand(String.Format(
                 "SELECT o.idOrden,c.dniCliente,c.nombreCliente,o.fechaCreado,o.fechaEntrega, o.totalOrden,o.descuento,(l.total-o.`totalOrden`) dscto ,o.aplicaDscto,l.cantidad,l.precio,l.descripcion,l.total,l.colorPrenda,l.marca,l.defecto,p.pago1,p.pago2,u.direccion,u.telefono,u.impresora,p.tipoPago1,o.express,o.delivery FROM Orden o INNER JOIN Cliente c ON o.idCliente=c.idCliente INNER JOIN Pago p ON o.idOrden=p.idOrden INNER JOIN OrdenLinea l ON o.idOrden=l.idOrden INNER JOIN usuario u ON u.id=o.idUsuario WHERE o.idOrden={0}", txtTicket.Text), cn1.ObtenerConexion());
@@ -66,7 +66,7 @@ namespace Lavanderia.forms
                 ticket.TextoIzquierda("HORARIO: LUNES A VIERNES DE 8:00AM");
                 ticket.TextoIzquierda(" A 8:00PM Y SABADO DE 8:00AM A 7:00PM");
                 ticket.TextoIzquierda("TELEF: " + _reader1.GetString(19));
-                ticket.TextoIzquierda("WEB:LAVANDERIASANISIDRO.COM");
+                //ticket.TextoIzquierda("WEB:LAVANDERIASANISIDRO.COM");
                 ticket.lineasIgual();
                 ticket.TextoIzquierda("CLIENTE: " + _reader1.GetString(2).ToUpper());
                 if (!_reader1.GetString(1).Equals(""))

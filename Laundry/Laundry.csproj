@@ -51,7 +51,7 @@
     <StartupObject>Lavanderia.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>logo.ico</ApplicationIcon>
+    <ApplicationIcon>logo %281%29.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>false</SignAssembly>
@@ -759,6 +759,7 @@
     <None Include="Resources\logo.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="logo %281%29.ico" />
     <Content Include="logo.ico" />
     <None Include="Resources\logo %281%29.ico" />
     <None Include="Resources\Print_11009.ico" />
