@@ -305,7 +305,9 @@
             this.cbDescuento.Items.AddRange(new object[] {
             resources.GetString("cbDescuento.Items"),
             resources.GetString("cbDescuento.Items1"),
-            resources.GetString("cbDescuento.Items2")});
+            resources.GetString("cbDescuento.Items2"),
+            resources.GetString("cbDescuento.Items3"),
+            resources.GetString("cbDescuento.Items4")});
             this.cbDescuento.Name = "cbDescuento";
             this.cbDescuento.ValueMember = "0";
             // 

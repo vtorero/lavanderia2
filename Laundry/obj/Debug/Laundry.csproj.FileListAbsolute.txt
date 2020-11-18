@@ -127,3 +127,4 @@ D:\lavanderia2\Laundry\obj\Debug\Laundry.csproj.GenerateResource.Cache
 D:\lavanderia2\Laundry\obj\Debug\Laundry.exe
 D:\lavanderia2\Laundry\obj\Debug\Laundry.pdb
 D:\lavanderia2\Laundry\bin\Debug\Laundry.pdb
+D:\lavanderia2\Laundry\obj\Debug\Laundry.csprojResolveAssemblyReference.cache
