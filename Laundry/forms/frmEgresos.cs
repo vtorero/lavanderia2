@@ -19,6 +19,8 @@ namespace Lavanderia.forms
         public frmEgresos()
         {
             InitializeComponent();
+            
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -43,8 +45,21 @@ namespace Lavanderia.forms
                 Egreso egreso = new Egreso();
                 egreso.Usuario = varGlobales.sessionUsuario;
                 DateTime Hoy = DateTime.Now;
-                string fecha_actual = Hoy.ToString("yyyy-MM-dd HH:mm:ss");
-                egreso.FechaEgreso = fecha_actual;
+
+                 decimal porcentajeDescuento = varGlobales.sessionUsuario;
+                 if (porcentajeDescuento == 1)
+                 {
+                     egreso.Usuario = 3;
+                     string fecha_actual = this.dtFechaEgreso.Value.ToString("yyyy-MM-dd HH:mm:ss");
+                     egreso.FechaEgreso = fecha_actual;
+                 }
+                 else {
+                     egreso.Usuario = varGlobales.sessionUsuario;
+                     string fecha_actual = Hoy.ToString("yyyy-MM-dd HH:mm:ss");
+                     egreso.FechaEgreso = fecha_actual;
+                 }
+                
+                
                 egreso.Monto = Convert.ToDecimal(txtCantidad.Text);
                 egreso.Motivo = txtMotivo.Text;
                 egreso.Estado = 1;
@@ -60,6 +75,17 @@ namespace Lavanderia.forms
         private void txtCantidad_KeyPress(object sender, KeyPressEventArgs e)
         {
             v.soloNumeros(e);
+        }
+
+        private void frmEgresos_Load(object sender, EventArgs e)
+        {
+            decimal porcentajeDescuento = varGlobales.sessionUsuario;
+            if (porcentajeDescuento == 1)
+            {
+                this.labelFecha.Visible = true;
+                this.dtFechaEgreso.Visible = true;
+            }
+
         }
     }
 }

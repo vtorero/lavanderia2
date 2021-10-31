@@ -263,7 +263,7 @@
             this.egresosToolStripMenuItem,
             this.historicoClientesToolStripMenuItem});
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.optionsToolStripMenuItem.Text = "&Reportes";
             this.optionsToolStripMenuItem.Visible = false;
             // 
@@ -319,14 +319,14 @@
             // imprimirTicketToolStripMenuItem
             // 
             this.imprimirTicketToolStripMenuItem.Name = "imprimirTicketToolStripMenuItem";
-            this.imprimirTicketToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.imprimirTicketToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.imprimirTicketToolStripMenuItem.Text = "Imprimir Ticket ";
             this.imprimirTicketToolStripMenuItem.Click += new System.EventHandler(this.imprimirTicketToolStripMenuItem_Click);
             // 
             // cierreCajaToolStripMenuItem
             // 
             this.cierreCajaToolStripMenuItem.Name = "cierreCajaToolStripMenuItem";
-            this.cierreCajaToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.cierreCajaToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.cierreCajaToolStripMenuItem.Text = "Cierre Caja";
             this.cierreCajaToolStripMenuItem.Visible = false;
             this.cierreCajaToolStripMenuItem.Click += new System.EventHandler(this.cierreCajaToolStripMenuItem_Click);

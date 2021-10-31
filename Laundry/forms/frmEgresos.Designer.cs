@@ -34,6 +34,8 @@
             this.txtMotivo = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.labelFecha = new System.Windows.Forms.Label();
+            this.dtFechaEgreso = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -48,7 +50,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(30, 39);
+            this.label2.Location = new System.Drawing.Point(28, 39);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(42, 13);
             this.label2.TabIndex = 1;
@@ -74,7 +76,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(191, 143);
+            this.btnGuardar.Location = new System.Drawing.Point(188, 160);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(115, 31);
             this.btnGuardar.TabIndex = 4;
@@ -84,7 +86,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(312, 143);
+            this.btnCancelar.Location = new System.Drawing.Point(309, 160);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(115, 31);
             this.btnCancelar.TabIndex = 5;
@@ -92,11 +94,34 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.button1_Click);
             // 
+            // labelFecha
+            // 
+            this.labelFecha.AutoSize = true;
+            this.labelFecha.Location = new System.Drawing.Point(28, 139);
+            this.labelFecha.Name = "labelFecha";
+            this.labelFecha.Size = new System.Drawing.Size(40, 13);
+            this.labelFecha.TabIndex = 6;
+            this.labelFecha.Text = "Fecha:";
+            this.labelFecha.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.labelFecha.Visible = false;
+            // 
+            // dtFechaEgreso
+            // 
+            this.dtFechaEgreso.CustomFormat = "yyyy-MM-dd hh:mm:ss";
+            this.dtFechaEgreso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtFechaEgreso.Location = new System.Drawing.Point(102, 134);
+            this.dtFechaEgreso.Name = "dtFechaEgreso";
+            this.dtFechaEgreso.Size = new System.Drawing.Size(109, 20);
+            this.dtFechaEgreso.TabIndex = 8;
+            this.dtFechaEgreso.Visible = false;
+            // 
             // frmEgresos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(451, 195);
+            this.ClientSize = new System.Drawing.Size(451, 236);
+            this.Controls.Add(this.dtFechaEgreso);
+            this.Controls.Add(this.labelFecha);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.txtMotivo);
@@ -107,6 +132,7 @@
             this.Name = "frmEgresos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Salida de Caja";
+            this.Load += new System.EventHandler(this.frmEgresos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,5 +146,7 @@
         private System.Windows.Forms.TextBox txtMotivo;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Label labelFecha;
+        private System.Windows.Forms.DateTimePicker dtFechaEgreso;
     }
 }
