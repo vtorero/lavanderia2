@@ -129,10 +129,7 @@ D:\lavanderia2\Laundry\obj\Debug\Laundry.pdb
 D:\lavanderia2\Laundry\bin\Debug\Laundry.pdb
 D:\lavanderia2\Laundry\obj\Debug\Laundry.csprojResolveAssemblyReference.cache
 E:\proyectos\lavanderia2\Laundry\bin\Debug\Laundry.exe.config
-E:\proyectos\lavanderia2\Laundry\obj\Debug\Laundry.exe
-E:\proyectos\lavanderia2\Laundry\obj\Debug\Laundry.pdb
 E:\proyectos\lavanderia2\Laundry\bin\Debug\Laundry.exe
-E:\proyectos\lavanderia2\Laundry\bin\Debug\Laundry.pdb
 E:\proyectos\lavanderia2\Laundry\bin\Debug\Microsoft.Web.XmlTransform.dll
 E:\proyectos\lavanderia2\Laundry\bin\Debug\Newtonsoft.Json.Net20.dll
 E:\proyectos\lavanderia2\Laundry\bin\Debug\NuGet.Core.dll
@@ -162,3 +159,6 @@ E:\proyectos\lavanderia2\Laundry\obj\Debug\Lavanderia.forms.frmServicio.resource
 E:\proyectos\lavanderia2\Laundry\obj\Debug\Lavanderia.forms.OrdenesV2.resources
 E:\proyectos\lavanderia2\Laundry\obj\Debug\Lavanderia.Properties.Resources.resources
 E:\proyectos\lavanderia2\Laundry\obj\Debug\Laundry.csproj.GenerateResource.Cache
+E:\proyectos\lavanderia2\Laundry\obj\Debug\Laundry.exe
+E:\proyectos\lavanderia2\Laundry\obj\Debug\Laundry.pdb
+E:\proyectos\lavanderia2\Laundry\bin\Debug\Laundry.pdb

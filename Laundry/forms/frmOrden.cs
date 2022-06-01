@@ -962,6 +962,10 @@ namespace Lavanderia.forms
                 ticket.TextoCentro("Prendas sin garantía");
             }
             ticket.TextoCentro("¡GRACIAS POR SU PREFERENCIA!");
+            ticket.TextoCentro("=============================");
+            ticket.TextoCentro("Pasado 90 días, las prendas");
+            ticket.TextoCentro("que no han sido recogidas");
+            ticket.TextoCentro("serán entregadas en donación");
             ticket.CortaTicket();
             ticket.ImprimirTicket(_reader1.GetString(20));
 
