@@ -865,8 +865,8 @@ namespace Lavanderia.forms
             MySqlDataReader _reader = _comando.ExecuteReader();
             _reader1.Read();
             ticket.TextoIzquierda("DIRECCION: " + _reader1.GetString(18).ToUpper());
-            ticket.TextoIzquierda("HORARIO: LUNES A VIERNES DE 8:00AM");
-            ticket.TextoIzquierda(" A 8:00PM Y SABADO DE 8:00AM A 7:00PM");
+            ticket.TextoIzquierda("HORARIO: LUNES A VIERNES DE 8:30AM");
+            ticket.TextoIzquierda(" A 8:00PM Y SABADO DE 8:30AM A 7:00PM");
             ticket.TextoIzquierda("TELEF: " + _reader1.GetString(19));
            // ticket.TextoIzquierda("WEB:LAVANDERIASANISIDRO.COM");
             ticket.lineasIgual();
