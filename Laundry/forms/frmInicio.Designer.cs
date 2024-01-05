@@ -583,7 +583,7 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip;
             this.Name = "frmInicio";
-            this.Text = "Lavandería San Isidro S.A";
+            this.Text = "Lavandería Lava Premium";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmInicio_Load);
             this.menuStrip.ResumeLayout(false);

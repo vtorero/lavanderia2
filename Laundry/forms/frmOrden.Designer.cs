@@ -65,7 +65,6 @@
             this.chkVisa = new System.Windows.Forms.CheckBox();
             this.lblObs = new System.Windows.Forms.Label();
             this.txtObservacion = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.dtHoraEntrega = new System.Windows.Forms.DateTimePicker();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.dtFechaEntrega = new System.Windows.Forms.DateTimePicker();
@@ -231,7 +230,6 @@
             this.groupBox2.Controls.Add(this.chkVisa);
             this.groupBox2.Controls.Add(this.lblObs);
             this.groupBox2.Controls.Add(this.txtObservacion);
-            this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.dtHoraEntrega);
             this.groupBox2.Controls.Add(this.btnGuardar);
             this.groupBox2.Controls.Add(this.dtFechaEntrega);
@@ -382,11 +380,6 @@
             // 
             resources.ApplyResources(this.txtObservacion, "txtObservacion");
             this.txtObservacion.Name = "txtObservacion";
-            // 
-            // label12
-            // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.Name = "label12";
             // 
             // dtHoraEntrega
             // 
@@ -910,7 +903,6 @@
         private System.Windows.Forms.RadioButton rdTotal;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.DateTimePicker dtHoraEntrega;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label lblObs;
         private System.Windows.Forms.TextBox txtObservacion;
         private System.Windows.Forms.Label lblSimbolopendiente;
