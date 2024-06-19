@@ -9,9 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Lavanderia.Persistencia;
 using Lavanderia.Models;
-using MySql.Data.MySqlClient;
+
 using Lavanderia.util;
 using Lavanderia.forms.busquedas;
+using MySql.Data.MySqlClient;
 
 namespace Lavanderia.forms
 {

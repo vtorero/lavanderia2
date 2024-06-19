@@ -1,6 +1,8 @@
-﻿namespace Lavanderia.Models {
-    
-    
-    public partial class dsClientes {
+﻿namespace Lavanderia.Models
+{
+
+
+    public partial class dsClientes
+    {
     }
 }

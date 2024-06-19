@@ -1,7 +1,9 @@
-﻿namespace Lavanderia.Models {
-    
-    
-    public partial class dsRecord {
+﻿namespace Lavanderia.Models
+{
+
+
+    public partial class dsRecord
+    {
         partial class dtRecordDataTable
         {
         }

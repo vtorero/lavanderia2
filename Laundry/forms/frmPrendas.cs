@@ -110,7 +110,7 @@ namespace Lavanderia.forms
                 prenda.Descripcion = txtDescripcion.Text.Trim();
                 prenda.precioServicio = Decimal.Round(Convert.ToDecimal(txtPrecio.Text),2);
                 prenda.tipoPrenda = cmbTipoPrenda.Text;
-                prenda.tipo_oferta = cmbTipoPrenda.ValueMember;
+                prenda.tipo_oferta = Convert.ToInt32(cmbTipoPrenda.ValueMember);
 
                
 
@@ -241,10 +241,10 @@ namespace Lavanderia.forms
             while (_readerS.Read())
             {
                 string name = _readerS.GetString("descripcion");
-                string id = _readerS.GetString("id_tipo");
+                int id = _readerS.GetInt32("id_tipo");
                 cmbTipoPrenda.Items.Add(name);
                 cmbTipoPrenda.DisplayMember = name;
-                cmbTipoPrenda.ValueMember = id;
+                cmbTipoPrenda.ValueMember = id.ToString();
             }
             _readerS.Close();
             cnx.cerrarConexion();

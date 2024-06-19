@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Lavanderia.Persistencia;
 using MySql.Data.MySqlClient;
 
+
 namespace Lavanderia.forms.busquedas
 {
     public partial class frmBuscarColor : Form

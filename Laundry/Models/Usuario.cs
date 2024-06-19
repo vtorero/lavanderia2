@@ -10,6 +10,8 @@ namespace Lavanderia.Models
     {
         public int idUsuario { get; set; }
         public string nombreUsuario{ get; set; }
+        public string nombre { get; set; }
+        public string clave{ get; set; }
         public string apellidoUsuario { get; set; }
         public string emailUsuario { get; set; }
         public string sucursalUsuario { get; set; }

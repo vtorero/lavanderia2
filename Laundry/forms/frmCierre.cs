@@ -1,5 +1,5 @@
 ﻿using CrystalDecisions.CrystalReports.Engine;
-using MySql.Data.MySqlClient;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Lavanderia.util;
+using MySql.Data.MySqlClient;
 
 namespace Lavanderia.forms
 {
@@ -27,7 +28,7 @@ namespace Lavanderia.forms
 ReportDocument cryrep = new ReportDocument();
 
 
-MySqlDataAdapter myadap = new MySqlDataAdapter(String.Format("(SELECT pg.idOrden,UPPER(c.nombreCliente) nombreCliente,SUBSTRING(o.fechaCreado,1,10) AS fechaCreado,pg.fechaPago,o.idUsuario,IF(delivery = 1, 'SI', 'NO') as delivery, u.sucursal,pg.pagoTotal,pg.pago1 AS pago," +
+MySqlDataAdapter myadap = new MySql.Data.MySqlClient.MySqlDataAdapter(String.Format("(SELECT pg.idOrden,UPPER(c.nombreCliente) nombreCliente,SUBSTRING(o.fechaCreado,1,10) AS fechaCreado,pg.fechaPago,o.idUsuario,IF(delivery = 1, 'SI', 'NO') as delivery, u.sucursal,pg.pagoTotal,pg.pago1 AS pago," +
 "(SELECT IFNULL(SUM(monto),0) FROM egresos  WHERE fechaEgreso BETWEEN '" + dtFechaInicial.Value.ToString("yyyy-MM-dd") + " 00:00:00' AND '" + dtFechaInicial.Value.ToString("yyyy-MM-dd") + " 23:59:59' AND idUsuario=" + varGlobales.sessionUsuario + ") egreso, " +
 " IF(tipoPago1=0,'Efectivo','Tarjeta') modoPago,IF(o.Estado=0,'Entrega','Recojo') Movimiento FROM " +
 " (SELECT * FROM Pago WHERE fechaPago BETWEEN '" + dtFechaInicial.Value.ToString("yyyy-MM-dd") + " 00:00:00' AND '" + dtFechaInicial.Value.ToString("yyyy-MM-dd") + " 23:59:59' " +

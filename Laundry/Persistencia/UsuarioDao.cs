@@ -16,7 +16,7 @@ namespace Lavanderia.Persistencia
             ConexBD conec = new ConexBD();
             List<Usuario> _lista = new List<Usuario>();
             conec.Conectar();
-            MySqlCommand _comando = new MySqlCommand("consultaUsuario",conec.ObtenerConexion());
+            MySqlCommand _comando = new MySqlCommand("CONSULTAUSUARIO",conec.ObtenerConexion());
             _comando.CommandType = CommandType.StoredProcedure;
             _comando.Parameters.Add(new MySqlParameter("USUARIO", user));
             _comando.Parameters.Add(new MySqlParameter("PASS", pass));

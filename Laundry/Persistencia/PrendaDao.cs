@@ -134,7 +134,7 @@ namespace Lavanderia.Persistencia
                 prenda.Descripcion = _reader.GetString(2);
                 prenda.precioServicio = _reader.GetDecimal(3);
                 prenda.tipoPrenda = _reader.GetString(4);
-                prenda.tipo_oferta = _reader.GetString(5);
+                prenda.tipo_oferta = _reader.GetInt32(5);
                 
          _lista.Add(prenda);
             }
@@ -159,7 +159,7 @@ namespace Lavanderia.Persistencia
                 prenda.Descripcion = _reader.GetString(2);
                 prenda.precioServicio= _reader.GetDecimal(3);
                 prenda.tipoPrenda = _reader.GetString(5);
-                prenda.tipo_oferta = _reader.GetString(6);
+                prenda.tipo_oferta = _reader.GetInt32(6);
                 _lista.Add(prenda);
             }
 

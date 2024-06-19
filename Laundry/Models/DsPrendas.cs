@@ -1,8 +1,9 @@
 ﻿namespace Lavanderia.Models
 {
-    
-    
-    public partial class DsPrendas {
+
+
+    public partial class DsPrendas
+    {
         partial class PrendasDataTable
         {
         }

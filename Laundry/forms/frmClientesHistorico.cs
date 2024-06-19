@@ -1,5 +1,5 @@
 ﻿using CrystalDecisions.CrystalReports.Engine;
-using MySql.Data.MySqlClient;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Lavanderia.util;
+using MySql.Data.MySqlClient;
 
 namespace Lavanderia.forms
 {
