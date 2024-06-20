@@ -73,9 +73,9 @@ namespace Lavanderia.forms
                 {
                     ticket.TextoIzquierda("DNI: " + _reader1.GetString(1));
                 }
-                ticket.TextoIzquierda("FECHA DE ORDEN: " + _reader1.GetString(3));
-                ticket.TextoIzquierda("FECHA DE ENTREGA: " + _reader1.GetString(4).Substring(0, 10));
-                ticket.TextoExtremos("NRO DE ORDEN:", "Ticket # " + _reader1.GetString(0));
+                ticket.TextoIzquierda("FECHA DE ORDEN: " );
+                ticket.TextoIzquierda("FECHA DE ENTREGA: ");
+                ticket.TextoExtremos("NRO DE ORDEN:", "Ticket # " + Convert.ToString(_reader1.GetInt32(0)));
 
                 ticket.lineasAsteriscos();
                 ticket.EncabezadoVenta();
